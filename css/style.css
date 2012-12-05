@@ -1,0 +1,187 @@
+
+body {
+	font-family: 'DejaVuSansCondensed', Arial, Helvetica, sans-serif;
+	min-height: 100%;
+	background-color: #009696;
+}
+
+
+header {
+	background-color: #E00000;
+	width: 100%;
+	height: 70px;
+	position: relative;
+	z-index: 11;
+}
+
+nav {
+	background-color: #C40000;
+	padding: 10px;
+	border: 0px solid #8C0000;
+	border-bottom-width: 8px;
+	position: relative;
+	z-index: 10;
+}
+
+div.logo {
+	font-size: 100px;
+	color: white;
+	text-shadow: 0px 0px 30px rgba(150, 150, 150, 1);
+	position: absolute;
+	left: 10px;
+	top: -27px;
+	
+}
+
+#section_outer {
+	position:relative;
+	width: 900px;
+	height: 400px;
+	margin: 0px auto;
+}
+
+section {
+	width: 900px;
+	height: 400px;
+	margin: 0px auto;
+	display: none;
+	position: absolute;
+}
+
+h1 {
+	color: white;
+	text-shadow: 0px 0px 30px rgba(150, 150, 150, 1);
+	font-family: 'DejaVuSans', Arial, Helvetica, sans-serif;
+	margin: 0px;
+	position: absolute;
+	left: 110px;
+	top: 15px;
+}
+
+nav ul {
+	margin: 0px;
+	height: 20px;
+	margin-left: 50px;
+}
+
+nav li {
+	color: #8C0000;
+	float: left; 
+	padding: 0px 10px;
+	font-family: 'DejaVuSans', Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+.alignright {
+	float:right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+div.page {
+	width: 900px;
+	height: 350px;
+	display: none;
+	position: absolute;
+	
+}
+
+div.page img {
+	max-height: 350px;
+}
+
+
+.round {
+	border-radius: 10px;
+	
+}
+
+
+table {
+	background-color: white;
+}
+
+table td, table th {
+	padding: 3px;
+}
+
+table th {
+	background-color: #8C0000;
+	color:white;
+}
+
+
+
+
+
+table tr:nth-child(odd)
+{
+background:#cccccc;
+}
+
+
+div.page form {
+	
+	float: right;
+	
+	border: 3px solid #8C0000;
+	width: 300px;
+	margin: 15px;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+
+form input[type=text], form input[type=email] {
+	width: 100%;
+	border-radius: 3px;
+	border: 0px solid #8C0000;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+
+
+
+progress {
+	margin: 5px;
+}
+
+.middle {
+	margin: 0px auto;
+}
+
+code {
+	font-family: 'InconsolataMedium', Arial, Helvetica;
+	background-color: white;
+	display: block;
+	font-size: 16px;
+	padding: 20px;
+	border: 1px solid #666;
+	border-radius: 5px;
+	margin: 20px 0px;
+	
+}
+
+
+.border{
+	border: 3px solid #8C0000;
+}
+
+
+div.page div.browser {
+	font-size: 140px;
+	color: white;
+	text-shadow: 0px 0px 30px rgba(150, 150, 150, 1);
+	position: relative;
+	left: bottom;
+	margin: 10px;
+	float: left;
+	left: 140px;
+}
+
+div.halfbox {
+	width: 440px;
+	margin: 10px;
+	float: left;
+}

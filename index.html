@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        
+        <header>
+	        
+	        <div class="lsf logo">&#xe058;</div>
+	        <h1>HTML5</h1>
+        </header>
+        
+        <nav>
+	        
+	        <ul>
+		        <li>Semantics</li>
+		        <li>Mobile</li>
+	        </ul>
+	        
+        </nav>
+        
+        <div class="divider"></div>
+        
+        <div id="section_outer">
+        
+        <section id="sec1">
+ 
+<h2>Introduction</h2>
+ 
+<div class="page first" id="sec1_page1">
+	
+	<img src="/img/html5_logo.png" class="alignright">
+	
+	<h3>What is HTML5?</h3>
+		
+		
+	<p>HTML5 is a specification from the W3C intended to upgrade and improve areas of the web that were not performing ideally with a 12 year old standard.</p> 
+	
+	<p>It adds new behaviours, tags, and attributes that allow functionality that could not have been conceived at the time: rich web apps, multimedia, browsers that actually work.</p>
+		
+	
+	 
+</div>
+
+
+<div class="page" id="sec1_page2">
+
+	<h3>What <strong>isn't</strong> HTML5</h3>
+
+	<p>HTML 5 is not a collection of techniques and methodologies, not limited to:</p>
+	<ul>
+		<li>Ajax</li>
+		<li>CSS3</li>
+		<li>Javascript</li>
+		<li>Responsive Design</li>
+		<li>Web X.0</li>
+		<li>A lot of other things</li>
+	</ul>
+
+</div>
+
+<div class="page" id="sec1_page3">
+
+	<h3>The difference between HTML 5 and HTML 4</h3>
+
+	<p>The key change is that 5 intends to be do for real what HTML 4 was happy to fake. Tags in HTML 5 have more meaning than they used to.</p>
+	
+	<p>Tags, documents, and data within documents is supposed to have more inherent meaning. More on this soon.</p>
+
+</div>
+
+<div class="page" id="sec1_page4">
+	<h3>Browser support</h3>
+	
+	<p>By far the biggest concern or hesitation people have about implementing HTML 5 functionality within either current or upcoming development is that the browsers people use will not support HTML 5, and a large number of users will not gain the benefits, meaning a large amount of work will be wasted.</p>
+	
+	<div class="lsf browser">&#xe049;</div>
+	<div class="lsf browser">&#xe114;</div>
+	<div class="lsf browser">&#xe02c;</div>
+	<div class="lsf browser">&#xe099;</div>
+	<div class="lsf browser">&#xe077;</div>
+	
+	
+</div>
+
+<div class="page" id="sec1_page5">
+	
+	<img src="/img/otter.jpg" class="alignright border"> 
+	<h3>Browser support is not an issue. It's an excuse.</h3>
+	
+	<p>Every single browser supports HTML 5, including Internet Explorer 6.</p>
+	
+	<p>For a certain value of "support".</p>
+	
+	<p>HTML 5 is not an "all or nothing" choice. If certain tags don't work... don't use them. If a certain techniques aren't reliable for your target market, use something else. There is nothing to break, and basic web development understanding is all that is needed to start gaining benefit from HTML5 and its approach to the web. </p>
+	
+</div>
+
+</section>
+
+
+<section id="sec2">
+ 
+<h2>How to HTML5</h2>
+ 
+ 
+ 
+<div class="page first" id="sec2_page1"> 
+	<h3>Doctype, language, link and script tags simplified</h3>
+	
+	<p>Most developers will be familiar with this as a doctype:</p>
+	
+	<code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code>
+	
+	<p>HTML 5 does away with the unnecessary and arcane parts of that and goes with the following.</p>
+	
+	<code>&lt;!DOCTYPE html&gt;</code>
+	
+	<p>With that in place it is an HTML 5 document.</p>
+	
+</div>
+
+<div class="page" id="sec2_page2">
+
+	<h3>Simplified syntax</h3>
+	
+	<p>Parts of this were actually relevant.</p>
+	
+	<code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</code>
+	
+	<p>In particular the reference to XHTML told the browser that this is XML based document. In other words everything had to validate according to strictish XML rules. Most particularly this means all tags had to be closed, and all attributes a quoted key/value pair.</p>
+	
+	<p>In XHTML the following would not be valid:</p>
+	
+	<code>&lt;input type="checkbox" name="myCheckBox" checked&gt;</code>
+	
+	<p>In HTML5 this is considered perfectly fine. It's no longer XML, so it doesn't matter. Tags like &lt;img&gt; and &lt;link&gt; are free to do what they do best.</p>
+	
+</div>
+
+
+<div class="page" id="sec2_page3"> 
+	<h3>Shims, shivs and hacks</h3>
+	
+	<p>Unfortunately, all is not necessarily perfect in HTML5 implementation. When I said all browsers support HTML 5, there are certain definitions of "support" that apply. One of the major benefits of the new tags and syntax is that browsers that don't support something will almost always simply render it as it always had. There is no downside, with the exception of, as always, early versions of Internet Explorer.</p>
+	
+	<p>Versions below 8 have a "feature" where they don't properly support the new structural elements. And because they don't understand them they can't be styled with CSS.</p>
+	
+</div>
+
+<div class="page" id="sec2_page4"> 
+	<h3>Shims, shivs and hacks</h3>
+	
+	<img src="/img/polarbear.jpg" class="border middle">
+	
+</div>
+
+<div class="page" id="sec2_page5"> 
+	<h3>Shims, shivs and hacks</h3>
+	
+	<p>These hacks include "shims" and "shivs". The difference between these things is purely spelling. Another term is "polyfills". They're intended to put back in functionality that might be missing from a specific browser or class of browsers. Fortunately updating IE6+ to support the new structure tags is a simple javascript file.</p>
+	
+	
+</div>
+
+ 
+</section>
+
+ 
+<section id="sec3">
+ 
+<h2>Semantics</h2>
+ 
+<div class="page first" id="sec3_page1"> 
+ 
+<h3>What is a semantic?</h3>
+
+<p>Semantics literally is the study of meaning. The point of semantics in HTML is probably best explained by showing what semantics is not.</p>
+
+<code>&lt;span class="time"&gt;Sunday, December 9th, 7:34pm&lt;/span&gt;</code>
+
+<p>This is not a time. To a human it reads like a time. But there's actually nothing about it that makes it a time. The class could say anything, and it would be no more, or less, a time.</p>
+
+<p>Just like in the below, there's nothing about this code that makes it <strong>actually</strong> a footer. It's just called that.</p>
+
+<code>&lt;div id="footer"&gt;......&lt;/div&gt;</code>
+
+
+</div>
+
+
+<div class="page" id="sec3_page2">
+
+	<h3>Why you should care?</h3>
+
+	<p>This is the key question that enthusiasts and advocates often overlook. "Semantics" for their own sake are relatively meaningless.</p>
+	
+	<p>Semantically correct markup is more:</p>
+	
+	<ul>
+		<li>Consumable</li>
+		<li>Accessible</li>
+		<li>Scriptable</li>
+		<li>Indexable</li>
+		<li>Flexible</li>
+	</ul>
+
+	<p>But also you should care... because you should care.</p>
+
+</div>
+
+<div class="page" id="sec3_page3">
+
+	<h3>New structural tags</h3>
+	
+	<p>HTML 5 adds a couple of major new structural tags to the soup that is HTML. Among them are <strong>header</strong>, <strong>footer</strong>,  <strong>nav</strong>, and <strong>section</strong>.</p>
+	
+	<p>While the first three are fairly obvious, section may need some explaining.</p>
+	
+	<p>A good guide to when to use a "section" is that if you wrote up a table of contents, would it have a listing. Note that to be valid a section must have a heading. Do not use section as a replacement for div.</p>
+	
+</div>
+
+
+<div class="page" id="sec3_page4">
+	
+	<h3>DON'T USE TABLES!</h3>
+	
+	<img src="/img/turtle.jpg" class=" middle border">
+	
+</div>
+
+
+<div class="page" id="sec3_page5">
+	
+	<h3>DON'T USE TABLES!</h3>
+	
+	<p>Using tables for layout is the opposite of semantic. It creates extremely verbose HTML that is harder to navigate in the DOM as the code has no inherent meaning.</p>
+	
+	<p>There is no good case for using tables for positioning and layout in today's browser environment. There are better methods, especially using CSS. That's what it's for.</p>
+	
+</div>
+
+
+<div class="page" id="sec3_page6">
+	<h3>USE TABLES!</h3>
+	
+	<p>Some people take it too far. The point is not to ban tables, but to use them for what they're for. If you have rows and columns of data, that's exactly what a table is intended for!</p>
+	
+	
+	<table class="round border middle">
+	<thead>
+	<tr>
+		<th>Code</th>
+		<th>Name</th>
+		<th>Qty</th>
+		<th>Price</th>
+		<th>Sum</th>
+	</tr>
+	</thead>	
+	<tbody>
+	<tr>
+		<td>#7363</td>
+		<td>Chewing Gum</td>
+		<td>2</td>
+		<td style="text-align: right;">$1.00</td>
+		<td style="text-align: right;">$2.00</td>
+	</tr>
+	<tr>
+		<td>#Q765</td>
+		<td>Smiths Crisps (Chicken)</td>
+		<td>1</td>
+		<td style="text-align: right;">$1.47</td>
+		<td style="text-align: right;">$1.47</td>
+	</tr>
+	<tr>
+		<td>9836</td>
+		<td>Diet Coke 1.25l</td>
+		<td>5</td>
+		<td style="text-align: right;">$2.50</td>
+		<td style="text-align: right;">$12.50</td>
+	</tr>
+	<tr>
+		<td>M769</td>
+		<td>Mentos 45g</td>
+		<td>1</td>
+		<td style="text-align: right;">$1.85</td>
+		<td style="text-align: right;">$1.85</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td style="text-align: right;">$17.84</td>
+	</tr>
+	</tbody>
+	</table>
+	
+	
+	
+</div>
+
+
+<div class="page" id="sec3_page7">
+	<h3>The new tags</h3>
+	
+	<p>As well as the new structural tags, HTML adds a lot of new semantic tags that provide significant improvements in both readability and usability</p>
+	
+	<code>&lt;time datetime="2009-11-13"&gt;November 13, 2009&lt;time&gt;</code>
+	
+	<code>&lt;video poster="myvideo.jpg" controls&gt;<br>
+ &lt;source src="myvideo.m4v" type="video/mp4"&gt;<br>
+ &lt;source src="myvideo.ogg" type="video/ogg"&gt;<br>
+&lt;/video&gt;<br>
+	</code>
+	<code>
+	&lt;object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="320" height="256"&gt;<br>
+&lt;param name="src" value="monademo.mov" &gt;<br>
+&lt;param name="controller" value="true" &gt;<br>
+&lt;param name="autoplay" value="false"&gt;<br>
+&lt;object type="video/quicktime" data="monademo.mov" width="320" height="256"&gt;<br>
+&lt;param name="controller" value="true" &gt;<br>
+&lt;param name="autoplay" value="false"&gt;<br>
+&lt;/object&gt;
+</code>
+</div>
+
+
+<div class="page" id="sec3_page9">
+	<h3>data-* attributes</h3>
+	
+	<p>HTML5 allows the creation of completely valid attributes to any element, as long as the attribute starts with "data-". This means data can be stored directly on the element, rather than needing to clutter javascript with global variables, or a form with hidden values.</p>
+	
+	<code>&lt;table id="products" data-sortcol="column3" data-sortdirection="asc" &gt;</code>
+	
+	<p>Conveniently, jquery provides excellent ways to address that information in its <em>data()</em> method.</p>
+	<code>$('#products').data('sortcol');</code>
+	
+	<p>This sort of concept can even store entire arrays and structures.</p>
+	
+	<code>&lt;table id="products" data-sorting="{"sortby":"column3", "direction":"asc"}"&gt;</code>
+	
+</div>
+
+ 
+</section>
+ 
+
+ 
+<section id="sec4">
+ 
+<h2>Form Fields</h2>
+
+<div class="page first" id="sec4_page1">
+
+
+<h3>Tags: Progress</h3>
+
+<form>
+
+<progress max="100"></progress>
+<progress id="progress-javascript-example" max="122" value="100.462"></progress>
+
+</form>
+
+
+
+
+
+
+<p>Progress fields do exactly what they sound like. They create a progress bar. The one at the top in this example is "indeterminate". The other one is nearly done. The value of progress can be easily scripted, allowing it to increase visibly.</p>
+
+</div>
+
+<div class="page" id="sec4_page2">
+<h3>Type: Email</h3>
+
+<form>
+
+<input name="email" type="email" placeholder="email">
+<button>Save</button>
+</form>
+
+<p>The email type field provides little visible difference to a user, but provides mobile users a more customised keyboard to optimise text input. Additionally, the email field will self-validate.</p>
+
+<p>Note that there is absolutely no scripting for this behaviour. It is all internal, default behaviour.</p>
+
+<code>&lt;input name="email" type="email" placeholder="email"&gt;</code>
+
+
+</div>
+
+
+
+
+<div class="page" id="sec4_page3">
+<h3>Type: All the others</h3>
+
+<form>
+<div style="text-align: center;">
+<input name="search" type="search"><br><br>
+<input name="search" type="time"><br><br>
+
+<input name="search" type="range"><br>
+</div>
+<button>Save</button>
+</form>
+
+
+<p>There are a range of others of various degrees of usefulness and implementation.</p>
+
+<ul>
+
+<li><strong>color:</strong> Gives the end user a native color picker to choose a color.</li>
+<li><strong>date:</strong> Offers a datepicker.</li>
+<li><strong>datetime:</strong> An element to choose both date and time.</li>
+<li><strong>email:</strong> A field for entering e-mail address(es).</li>
+<li><strong>number:</strong> Picking a number.</li>
+<li><strong>tel:</strong> Choosing a telephone number.</li>
+</ul>
+<code>$('input[type=date]').jDatePicker();</code>
+</div>
+
+<div class="page" id="sec4_page4">
+<h3>Attribute: required</h3>
+
+<form>
+
+<input name="name" type="text" placeholder="name" required>
+<button>Save</button>
+</form>
+
+<p>A useful new attribute is "required". This has long been a requirement, a more syntactic and reasonable way for the field to be forced to be filled. Note that this doesn't actually replace the use of a * or something as a visual cue.</p>
+
+</div>
+
+<div class="page" id="sec4_page5">
+<h3>Attribute: placeholder</h3>
+
+<form>
+<input name="name" type="text" placeholder="name" required>
+<button>Save</button>
+</form>
+
+<p>As seen in the previous examples, "placeholder" allows a non-filled field to have a label attached. This placeholder will then vanish when the user either clicks on the field, or starts entering data (depending on the browser).</p>
+
+</div>
+
+<div class="page" id="sec4_page6">
+<h3>Attribute: pattern</h3>
+
+
+<form>
+<input name="postcode" type="text" placeholder="postal code" pattern="[0-9]{4}" required>
+<button>Save</button>
+</form>
+
+<p>Allow the developer to specify a regular expression pattern that has to be matched by the field, for example, allowing it to be forced to numbers only, or a specific length.</p>
+
+<p>It should be noted that it's important that the developer make the pattern apparent to the user, not like this example.</p>
+
+<code>&lt;input name="postcode" type="text" placeholder="postal code" pattern="[0-9]{4}"&gt;</code>
+</div>
+
+<div class="page" id="sec4_page7">
+<h3>Attribute: list</h3>
+
+<form>
+
+<input name="name" type="text" placeholder="colour" list="colours">
+<datalist id="colours">
+	<option>Black</option>
+	<option>Blue</option>
+	<option>Red</option>
+	<option>Purple</option>
+</datalist>
+<button>Save</button>
+</form>
+
+<p>As seen in the previous examples, "placeholder" allows a non-filled field to have a label attached. This placeholder will then vanish when the user either clicks on the field, or starts entering data (depending on the browser).</p>
+
+
+</div>
+
+<div class="page" id="sec4_page8">
+<h3>Attribute: autofocus</h3>
+
+<form>
+<input name="name" type="text" placeholder="colour" autofocus=>
+<button>Save</button>
+</form>
+
+<p>Immediately give this field the focus, so the user can start typing straight away. Note: this can interact poorly with placeholder.</p>
+
+
+</div>
+
+
+<div class="page" id="sec4_page9">
+<h3>Drag and drop</h3>
+
+<p>Though it's a bit complex for this example, HTML5 supports "drag" and "drop" as events, with a range of elements being drag and droppable. In particular the API supports dragging and dropping files from the file system, and has significantly improved file upload capabilities over HTML4.</p>
+
+</div>
+
+
+</section>
+ 
+<section id="sec5">
+ 
+ 
+<h2>Mobile Devices</h2>
+ 
+ 
+<div class="page first" id="sec5_page1">
+ 
+- Geolocation
+</div>
+ 
+<div class="page" id="sec5_page2">
+- Genuinely useful forms
+</div>
+ 
+<div class="page" id="sec5_page3">
+- Touch events
+</div>
+
+</section>
+ 
+<section>
+ 
+<h2>Local Storage</h2>
+ 
+</section>
+ 
+<section>
+ 
+<h2>Multimedia</h2>
+ 
+</section>
+ 
+<section>
+ 
+<h2>The Ecosystem</h2>
+ 
+- CSS3
+- Javascript/Jquery
+- Microformats
+- @FontFace
+- Responsive Design
+ 
+</section>
+        </div>
+ 
+<footer>
+ 
+</footer>        
+        
+    </body>
+</html>
